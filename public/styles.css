@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+}
+
+main{
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  
+}
+
+section{
+  background-color: aquamarine;
+  width: 30%;
+  border: 2px solid black;
+  text-align: center;
+  margin: 3%;
+  padding: 3%;
+}
+
+header{
+  height: 100px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

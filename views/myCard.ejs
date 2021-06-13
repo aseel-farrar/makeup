@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="reset.css">
+  <title>my Card</title>
+</head>
+
+<body>
+  <header>
+    <a href="/">Home</a>
+    <a href="/allProducts">All product</a>
+    <a href="/myCard">My card</a>
+  </header>
+
+  <main>
+
+
+    <% if(allProducts.length !==0 ) {%>
+      <% allProducts.forEach(product=>{ %>
+
+        <section>
+          <img src="<%= product.image%>" alt="<%= product.name %>">
+          <h3>
+            <%= product.name %>
+          </h3>
+          <h3>
+            <%= product.price %>
+          </h3>
+
+          <form action="/details/<%= product.id %>" method="post">
+            <button type="submit">DETAILS</button>
+          </form>
+
+          <%}) %>
+        </section>
+
+
+        <%}%>
+
+          <% if(allProducts.length===0) {%>
+            <h1>No Products in Your Card</h1>
+            <%}%>
+
+  </main>
+</body>
+
+</html>
