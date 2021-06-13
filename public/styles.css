@@ -1,18 +1,17 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-main{
+main {
   margin: auto;
   width: 90%;
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
   flex-wrap: wrap;
-  
 }
 
-section{
+section {
   background-color: aquamarine;
   width: 30%;
   border: 2px solid black;
@@ -21,10 +20,19 @@ section{
   padding: 3%;
 }
 
-header{
+header {
   height: 100px;
   background-color: grey;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+form {
+  width: 80%;
+  background-color: grey;
+  border: black 2px solid;
+  margin: auto;
+  padding: 3%;
+  margin-top: 3%;
 }
