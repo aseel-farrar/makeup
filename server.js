@@ -8,8 +8,8 @@ const methodOverride = require('method-override');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-// const client = new pg.Client( { connectionString: process.env.DATABASE_URL, ssl: process.env.LOCALLY ? false : {rejectUnauthorized: false}} );
-const client = new pg.Client(process.env.DATABASE_URL);
+const client = new pg.Client( { connectionString: process.env.DATABASE_URL, ssl: process.env.LOCALLY ? false : {rejectUnauthorized: false}} );
+// const client = new pg.Client(process.env.DATABASE_URL);
 // const client = new pg.Client({ connectionString: process.env.DATABASE_URL, ssl: { rejectUnauthorized: false } });
 
 
