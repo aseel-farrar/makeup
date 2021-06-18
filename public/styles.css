@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 main {
@@ -39,4 +40,6 @@ form {
 
 h1{
   text-align: center;
+  font-size: xx-large;
+  text-transform: uppercase;
 }

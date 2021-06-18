@@ -20,16 +20,19 @@
 
   <main>
     <% productByPrice.forEach(product=>{ %>
-      <img src="<%= product.image_link %>" alt="<%= product.name %>">
-      <h3>
-        <%= product.name %>
-      </h3>
-      <h3>
-        <%= product.price %>
-      </h3>
-      <p>
-        <%= product.description %>
-      </p>
+      <section>
+
+        <img src="<%= product.image_link %>" alt="<%= product.name %>">
+        <h3>
+          <%= product.name %>
+        </h3>
+        <h3>
+          <%= product.price %>
+        </h3>
+        <p>
+          <%= product.description %>
+        </p>
+      </section>
       <%}) %>
   </main>
 </body>
